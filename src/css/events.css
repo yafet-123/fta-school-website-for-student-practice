@@ -1,0 +1,256 @@
+.columns{
+	margin-top:50px;
+	margin-bottom:30px;
+	margin-left:2rem;
+	margin-right:2rem;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-auto-flow: row;
+	gap:5%;
+}
+
+
+.blog-post{
+    display:flex;
+    flex-direction: column;
+    margin-bottom:20px;
+}
+
+.post-info{
+	width:100%;
+	display: flex;
+	align-items: center;
+	background-color:#F27C66;
+	overflow:hidden;
+	border:1px solid #595959;
+    border-radius:10px;
+	height:70px;	
+}
+
+.post-info p:first-child{
+	width:50%;
+	font-size: 25px;
+	font-weight: 800;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #B0B0B0;
+	color:#fff;
+}
+
+.post-info p:last-child{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width:50%;
+	color:#fff;
+	text-align: right;
+	font-size: 20px;
+	font-weight: 600;
+	
+}
+
+.blog-post h3{
+	padding-top:10px;
+	font-size: 23px;
+	line-height: 1.4;
+	color: #333333;
+	font-family: "Raleway";
+	font-weight:700;
+	margin:2px;
+	text-align: center;
+}
+
+.blog-post p{
+	padding-top:10px;
+	font-size: 18px;
+	line-height: 25px;
+	color:#595959;
+	font-family: "Raleway";
+	margin:2px;
+	text-align:left;
+	margin-bottom:10px;
+}
+
+.blog-post p a{
+	text-decoration: none;
+	color:#F27C66;
+	font-size: 21px;
+}
+
+.tags-post a{
+	margin-left: 10px;
+    line-height: 20px;
+    color:#F27C66;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.tags-post a:last-child{
+    border-left: 1px solid #f27c66;
+    padding-left:10px;
+}
+
+.page-pagination {
+	text-align: center;
+	width: 216px;
+	margin: 0 auto;
+	margin-bottom: 60px;
+}
+.page-pagination a {
+	display: block;
+	float: left;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #f2f2f2;
+	border-right: 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	line-height: 38px;
+	color: #333e4f;
+}
+.page-pagination a:last-child{
+	border-right: 1px solid #f2f2f2;
+}
+.page-pagination a:last-child,
+.page-pagination a:first-child{
+	color: #f27c66;
+	background-color: #f2f2f2;
+	font-size: 30px;
+}
+.page-pagination a.active{
+	background-color: #f27c66;
+	color: #ffffff;
+	border-color: #f27c66;
+}
+.page-pagination a:hover{
+	background-color: #f27c66;
+	color: #ffffff;
+	border-color: #f27c66;
+}
+
+
+/*                                                        footer                                                      */
+footer {
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	width:100%;
+	background-color: #2d3339;
+	line-height: 24px;
+}
+footer p {
+	font-family: "Helvetica";
+	font-size: 14px;
+	color: #b0b0b0;
+	line-height: 23px;
+}
+footer h2 {
+	font-size: 18px;
+	color: #f7f7f7;
+	text-transform: uppercase;
+	font-weight: 700;
+	background-color: #f27c66;
+	padding: 17px 15px 13px 10px;
+	margin-bottom: 30px;
+	margin-top: 0px;
+	box-shadow: 0 1px 0px rgba(0,0,0,0.24);
+}
+
+footer h3 {
+	color: #f7f7f7;
+	font-size: inherit;
+	font-weight: 500;
+	font-family: "Raleway";
+	margin: 0;
+	clear: none;
+	line-height: inherit;
+	text-transform: none;
+}
+
+.footer-about div{
+	border-top-left-radius: 10px;
+}
+
+.footer-latest h2{
+	background-color: #f9cb8f;
+}
+
+.footer-contact-form h2{
+	background-color: #18bb7c;
+}
+
+.footer-about address,
+.footer-about .footer-social{
+	margin-top: 25px;
+}
+.footer-about address a{
+	color: #b0b0b0;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.footer-social a {
+	width: 38px;
+	height: 38px;
+	margin-bottom: 5px;
+	line-height: 34px;
+	font-size: 16px;
+	color: #f7f7f7;
+	text-align: center;
+	background-color: transparent;
+	border: 2px solid #f27c66;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border-top-left-radius: 10px;
+	-ms-border-top-left-radius: 10px;
+	-moz-border-top-left-radius: 10px;
+	-webkit-border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	-ms-border-bottom-right-radius: 10px;
+	-moz-border-top-left-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+}
+.footer-social a + a {
+	margin-left: 3px;
+}
+.footer-social a:hover{
+	background: #f27c66;
+}
+
+.footer-latest article img {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	float: left;
+	margin-right: 14px;
+	margin-top: 5px;
+	width: 83px;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+.footer-latest .course-date>*{
+	display: inline-block;
+	color: #f9cb8f;
+	font-weight: 500;
+	line-height: 15px;
+}
+.footer-latest .course-date div:first-child:after{
+	margin: 0 5px;
+	content: "|";
+	color: #8f96a2;
+}
+.footer-latest article{
+	border-bottom: 1px solid #555a5f;
+	margin-bottom: 25px;
+	padding-bottom: 25px;
+}
+.footer-latest article:last-child {
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
