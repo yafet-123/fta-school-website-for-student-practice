@@ -1368,7 +1368,6 @@ header:before{
 	.sticky-menu .logo {
 		height: 50px;
 	}
-
 }
 
 
@@ -1996,7 +1995,7 @@ footer h3 {
 }
 .footer-social a:hover{
 	background: #f27c66;
-}
+} 
 .footer-latest article img {
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
