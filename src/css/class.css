@@ -228,3 +228,84 @@ header{
 }
 
 /*                                                                 page end                                                               */
+
+.header-title{
+	padding: 20px 0px;
+	font-size: 40px;
+	font-weight: 800;
+	color: #F27C66;
+	text-align: center;
+}
+
+.columns{
+	margin:30px 0px;
+	margin-left:2rem;
+	margin-right:2rem;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-auto-flow: row;
+	gap:5%;
+}
+
+.class-box{
+    display:flex;
+    flex-direction: column;
+    margin-bottom:20px;
+}
+
+.course-name {
+	display: block;
+	background-color: #333333;
+	padding: 10px;
+}
+.course-name {
+	padding: 10px 24px;
+}
+.course-name{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 15px;
+	clear: none;
+	color: #ffffff;
+	margin: 0;
+	font-weight: 400;
+	font-family: "Raleway";
+}
+
+.course-name h3,.price {
+	text-decoration: none;
+	color: #fff;
+}
+
+.course-date {
+	padding: 20px 10px;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 500;
+}
+.course-date {
+	padding: 20px 24px;
+}
+.day {
+	display: inline-block;
+}
+.time {
+	float: right;
+}
+.course-date i {
+	margin-right: 4px;
+}
+
+.divider {
+	width: 70px;
+	height: 2px;
+	clear: both;
+	background-color: #ffffff;
+	margin: 15px auto;
+}
+
+.bg-color-1 {
+	background-color: #f27c66 !important;
+}
+
