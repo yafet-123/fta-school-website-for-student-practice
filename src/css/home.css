@@ -229,6 +229,38 @@ header{
 
 /*                                                                 page end                                                               */
 
+.bg-color-1 {
+	background-color: #f27c66;
+}
+
+.counter-block {
+	text-align: center;
+	color: #ffffff;
+}
+.counter-block i {
+	font-size: 70px;
+	margin-bottom: 25px;
+}
+.counter-block .counter {
+	font-size: 40px;
+	line-height: 1;
+	margin-bottom: 15px;
+}
+.counter-block .counter-name {
+	font-size: 14px;
+}
+
+.columns{
+	z-index: 10;
+	margin-top:50px;
+	margin-bottom:30px;
+	margin-left:2rem;
+	margin-right:2rem;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-auto-flow: row;
+	gap:5%;
+}
 .gallery-item>* {
 	margin-bottom: 15px;
 }
