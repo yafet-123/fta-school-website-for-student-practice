@@ -229,134 +229,206 @@ header{
 
 /*                                                                 page end                                                               */
 
-.header-title{
-	padding: 20px 0px;
-	font-size: 40px;
-	font-weight: 800;
-	color: #F27C66;
-	text-align: center;
+.gallery-item>* {
+	margin-bottom: 15px;
 }
-
-.columns{
-	margin:30px 0px;
-	margin-left:2rem;
-	margin-right:2rem;
-	display: grid;
-	grid-template-columns: auto auto auto;
-	grid-auto-flow: row;
-	gap:5%;
+.gallery-item>*:last-child{
+	margin-bottom: 0;
 }
-
-.class-box{
-    display:flex;
-    flex-direction: column;
-    margin-bottom:20px;
-}
-
-.course-name {
-	display: block;
-	background-color: #333333;
-	padding: 10px;
-}
-.course-name {
-	padding: 10px 24px;
-}
-.course-name{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	font-size: 15px;
-	clear: none;
-	color: #ffffff;
+.gallery-item .portfolio-item {
 	margin: 0;
-	font-weight: 400;
-	font-family: "Raleway";
 }
-
-.course-name h3,.price {
-	text-decoration: none;
-	color: #fff;
+.full-width-slider {
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	overflow: hidden;
+	z-index: 1;
 }
-
-.course-date {
-	padding: 20px 10px;
-	color: #ffffff;
-	font-size: 14px;
-	font-weight: 500;
+.full-width-slider .gallery-item img {
+	width: 100%;
 }
-.course-date {
-	padding: 20px 24px;
-}
-.day {
-	display: inline-block;
-}
-.time {
-	float: right;
-}
-.course-date i {
-	margin-right: 4px;
-}
-
-.divider {
-	width: 70px;
-	height: 2px;
-	clear: both;
-	background-color: #ffffff;
-	margin: 15px auto;
-}
-
-.bg-color-1 {
-	background-color: #f27c66 !important;
-}
-
-.bg-color-2 {
-	background-color: #18bb7c !important;
-}
-.bg-color-3 {
-	background-color: #f9cb8f !important;
-}
-.bg-color-4 {
-	background-color: #4bbcd7 !important;
-}
-
-.page-pagination {
+.center-text {
 	text-align: center;
-	width: 216px;
-	margin: 0 auto;
-	margin-bottom:100px;
 }
-.page-pagination a {
+.testimonials-carousel .owl-pagination {
+	text-align: center;
+	margin-top: 20px;
+}
+.testimonials-carousel .owl-pagination .owl-page {
+	display: inline-block;
+	margin: 3px;
+	width: 8px;
+	height: 8px;
+	border: 1px solid #f27c66;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	background: transparent;
+}
+.testimonials-carousel .owl-pagination .owl-page {
+	border-color: #ffffff;
+}
+.fullwidth-background {
+	background-image: url(./src/img/pattern.png);
+	background-repeat: repeat;
+}
+
+.fullwidth-background.bg-2 {
+	padding: 60px 0 80px 0;
+	position: relative;
+	z-index: 1;
+	background-image: none;
+	background-color: #f27c66;
+}
+.fullwidth-background.bg-2>* {
+	position: relative;
+	z-index: 2;
+}
+.fullwidth-background.bg-2:before {
+	position: absolute;
+	z-index: 1;
+	content: "";
 	display: block;
-	float: left;
-	width: 40px;
-	height: 40px;
-	border: 1px solid #f2f2f2;
-	border-right: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	opacity: 0.2;
+	background-image: url(../img/parallax_pattern.png);
+	background-repeat: repeat;
+}
+
+.parallaxed {
+	padding: 100px 0;
+	position: relative;
+	overflow: hidden;
+}
+.parallaxed>*{
+	position: relative;
+}
+.parallaxed>*:not(.parallax-image):not(.them-mask){
+	z-index: 1;
+}
+.parallax-image{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	opacity: 0.2;
+	z-index: 3;
+}
+.type-2 .parallax-image {
+	z-index: 1;
+	opacity: 1;
+}
+.parallax-image img{
+	width: auto;
+	z-index: -2;
+}
+.parallaxed>*:not(.them-mask):not(.parallax-image){
+	z-index: 1;
+}
+.parallaxed .them-mask {
+	background-repeat: repeat;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	position: absolute !important;
+	z-index: 2;
+}
+.parallaxed.type-2 .them-mask {
+	background-color: #000000;
+	opacity: 0.5;
+}
+
+.bg-color-4 {
+	background-color: #4bbcd7;
+}
+
+.getInTouch-flex{
+	z-index: 4 !important;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.font-style-1 {
+	font-family: "Merriweather";
+	font-weight: 300;
+	font-size: 30px;
+	line-height: 1;
+	color: #ffffff;
+	margin-bottom: 35px;
+}
+
+.divider-mini {
+	width: 138px;
+	height: 3px;
+	display: inline-block;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	line-height: 38px;
-	color: #333e4f;
+	margin: 14px auto 14px auto;
+	background-color: #ffffff;
+	border-left: 46px solid;
+	border-right: 46px solid;
+	border-left-color: #f27c66;
+	border-right-color: #18bb7c;
+	display: block;
 }
-.page-pagination a:last-child{
-	border-right: 1px solid #f2f2f2;
-}
-.page-pagination a:last-child,
-.page-pagination a:first-child{
-	color: #f27c66;
-	background-color: #f2f2f2;
-	font-size: 30px;
-}
-.page-pagination a.active{
-	background-color: #f27c66;
+.parallax-text {
 	color: #ffffff;
-	border-color: #f27c66;
+	text-align: center;
+	margin-bottom: 30px;
+	width:60%;
 }
-.page-pagination a:hover{
-	background-color: #f27c66;
+
+form.subscribe {
+	display: flex;
+	font-size: 15px;
+	max-width: 630px;
+	margin: 0 auto;
+}
+form.subscribe input[name="email"] {
+	display: inline-block;
+	background-color: #ffffff;
+	line-height: 40px;
+	height: 40px;
+	padding: 0 18px;
+	border: 0;
+	width: calc(100% - 120px);
+	width: -moz-calc(100% - 125px);
+	border-top-left-radius: 4px;
+	-ms-border-top-left-radius: 4px;
+	-moz-border-top-left-radius: 4px;
+	-webkit-border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	-ms-border-bottom-left-radius: 4px;
+	-moz-border-bottom-left-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+}
+.subscribe input[type="submit"] {
+	display: inline-block;
+	cursor: pointer;
+	background-color: #18bb7c;
 	color: #ffffff;
-	border-color: #f27c66;
+	line-height: 40px;
+	height:40px;
+	padding: 0 20px;
+	margin-left: 5px;
+	border-color: transparent;
+	transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
 }
+form.subscribe input[type="submit"]:hover {
+	color: #f9cb8f;
+}
+
 
 
 /*                                                        footer                                                      */
